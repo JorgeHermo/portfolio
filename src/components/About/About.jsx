@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle/Particle"
+import Particle from "../Particle/Particle";
 import Github from "./Github";
 import Aboutcard from "./AboutCard";
 import Techstack from "./TechStack";

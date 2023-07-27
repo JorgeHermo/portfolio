@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import myImg from "../../Assets/"; TODO Get a proper avatar ASAP
 import Tilt from "react-parallax-tilt";
@@ -26,7 +25,7 @@ const Home2 = () => {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Applications and Products </b>
+                <b className="purple">Web Applications and Products</b>
               </i>
               <br />
               <br />
@@ -40,7 +39,7 @@ const Home2 = () => {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js</b>
               </i>
             </p>
           </Col>

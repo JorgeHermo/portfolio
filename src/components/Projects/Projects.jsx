@@ -1,10 +1,9 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle/Particle";
-import MasterFP from "../../Assets/MasterFP.png"
-import Almacen from "../../Assets/AlmacenBPO.png"
-import Mobility from "../../Assets/MobilityCity.png"
+import MasterFP from "../../Assets/MasterFP.png";
+import Almacen from "../../Assets/AlmacenBPO.png";
+import Mobility from "../../Assets/MobilityCity.png";
 
 function Projects() {
     return (
@@ -57,8 +56,14 @@ function Projects() {
                             imgPath={Almacen}
                             isBlog={false}
                             title="Almacen BPO"
-                            description="Almacen BPO is a stock management application developed for Secuoya Content Group's BPO division. Built on Laravel and MySQL, this app provides efficient inventory control and optimization, enhancing productivity for the organization. Please note that the project's repository is not publicly available due to its proprietary nature."
-                            ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+                            description={
+                                <span>
+                                    Almacen BPO is a stock management application developed for Secuoya Content Group's BPO division. Built on Laravel and MySQL, this app provides efficient inventory control and optimization, enhancing productivity for the organization.
+                                    <br />
+                                    <span style={{ color: 'orange' }}> Please note that the project's repository is not publicly available due to its proprietary nature.</span>
+                                </span>
+                            }
+                            ghLink=""
                         />
                     </Col>
 
@@ -67,7 +72,13 @@ function Projects() {
                             imgPath={Mobility}
                             isBlog={false}
                             title="Mobility City Visitantes "
-                            description="Guided tour visit application made with React.js and WordPress for the Mobility City Museum in Zaragoza, Spain. Please note that the project's repository is not publicly available due to its proprietary nature."
+                            description={
+                                <span>
+                                    Guided tour visit application made with React.js and WordPress for the Mobility City Museum in Zaragoza, Spain.
+                                    <br />
+                                    <span style={{ color: 'orange' }}> Please note that the project's repository is not publicly available due to its proprietary nature.</span>
+                                </span>
+                            }
                             ghLink=""
                         />
                     </Col>
