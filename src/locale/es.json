@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "projects": "Proyectos",
+        "resume": "Currículum"
+    },
+    "home": {
+        "home_greeting": "¡Hola!",
+        "im": "SOY"
+    },
+    "home2": {
+        "intro1": "PERMÍTAME",
+        "intro2": "PRESENTARME",
+        "intro3": "",
+        "intro4": "Me enamoré de la programación y creo que al menos he aprendido algo...",
+        "intro5": "Tengo fluidez con clásicos como",
+        "intro6": "Javascript",
+        "intro7": "Mis campos de interés son construir nuevas",
+        "intro8": "Aplicaciones Web y Productos",
+        "intro9": "Siempre que sea posible, también aplico mi pasión por desarrollar productos con",
+        "intro10": "Node.js",
+        "intro11": "y",
+        "intro12": "Librerias y Frameworks modernos de Javascript ",
+        "intro13": "como ",
+        "intro14": "React.js",
+        "intro15": "ENCUÉNTRAME EN",
+        "intro16": "No dudes en",
+        "intro17": "conectar",
+        "intro18": "conmigo"
+    },
+    "about": {
+        "about_greeting": "Conoce Quien",
+        "about_greeting2": "Soy",
+        "skils": "Competencias",
+        "skils2": "Profesionales",
+        "tools": "Herramientas",
+        "tools2": "Que uso"
+    },
+    "about2": {
+        "about_greeting": "Hola a todos, soy",
+        "from": "de",
+        "birthe_place": "Galicia, España.",
+        "about_my_self": "Algo aquí sobre mí",
+        "about_my_self2": "Además, actualmente estoy empleado como desarrollador web en Secuoya Content Group.",
+        "about_my_self3": "¡Además de programar, algunas otras actividades que me encanta hacer!",
+        "interests": "Jugar a juegos",
+        "interests2": "Leer libros",
+        "interests3": "",
+        "note": "¡Esforzarse por construir cosas que marquen la diferencia!"
+    },
+    "github": {
+        "git": "Días",
+        "git2": "Codeando"
+    },
+    "project": {
+        "intro": "Mis recientes",
+        "intro2": "Trabajos",
+        "intro3": "Aquí están algunos proyectos en los que he trabajado recientemente.",
+        "project1": "Cliente de redes sociales diseñado para que los desarrolladores compartan fragmentos de código y colaboren en fragmentos con un editor de texto en tiempo real, construido con React.js, Node.js, socket.io y MongoDB. Creado en colaboración con mi colega de bootcamp y amigo, Santiago Moncada.",
+        "project2": "Servidor de redes sociales diseñado para que los desarrolladores compartan fragmentos de código y colaboren en fragmentos con un editor de texto en tiempo real, construido con React.js, Node.js, socket.io y MongoDB. Creado en colaboración con mi colega de bootcamp y amigo, Santiago Moncada.",
+        "project3": "Almacen BPO es una aplicación de gestión de stock desarrollada para la división BPO de Secuoya Content Group. Construida en Laravel y MySQL, esta aplicación proporciona un control y optimización eficientes del inventario, mejorando la productividad de la organización.",
+        "project4": "Aplicación de visita guiada hecha con React.js y WordPress para el Museo de la Ciudad de la Movilidad en Zaragoza, España.",
+        "project_warning": "Servidor en mantenimiento",
+        "project_warning2": "Por favor, tenga en cuenta que el repositorio del proyecto no está disponible públicamente debido a su naturaleza propietaria."
+    },
+    "resume":{
+        "download":"Descargar"
+    }
+}

@@ -1,18 +1,25 @@
 import { useState, useEffect } from "react";
-import {Container, Row, Button} from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
 import Particle from "../Particle/Particle";
-import pdf from "../../Assets/CV-Jorge-Hermo-2023-ENG.pdf";
+import pdfENG from "../../Assets/CV-Jorge-Hermo-2023-ENG.pdf";
+import pdfES from "../../Assets/CV-Jorge-Hermo-2023-ES.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import { useTranslation } from 'react-i18next';
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 const Resume = () => {
     const [width, setWidth] = useState(1200);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         setWidth(window.innerWidth);
-    })
+    }, [])
+
+    const pdf = i18n.language === 'en' ? pdfENG : pdfES;
+
     return (
         <div>
             <Container fluid className="resume-section">
@@ -25,7 +32,7 @@ const Resume = () => {
                         style={{ maxWidth: "250px" }}
                     >
                         <AiOutlineDownload />
-                        &nbsp;Download CV
+                        &nbsp;{t('resume.download')}
                     </Button>
                 </Row>
 
@@ -43,7 +50,7 @@ const Resume = () => {
                         style={{ maxWidth: "250px" }}
                     >
                         <AiOutlineDownload />
-                        &nbsp;Download CV
+                        &nbsp;{t('resume.download')}
                     </Button>
                 </Row>
             </Container>

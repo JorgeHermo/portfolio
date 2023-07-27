@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import logo from "../Assets/";
-import {Button,Container, Nav, Navbar}from "react-bootstrap"
+import { Button, Container, Nav, Navbar } from "react-bootstrap"
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
@@ -10,10 +10,19 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [language, setLanguage] = useState('en');
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = () => {
+    const newLanguage = language === 'en' ? 'es' : 'en';
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -22,6 +31,7 @@ const Navigation = () => {
       updateNavbar(false);
     }
   }
+
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -36,6 +46,9 @@ const Navigation = () => {
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
+        <Button onClick={changeLanguage}>
+          {language === 'en' ? 'ES' : 'ENG'}
+        </Button>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -50,7 +63,7 @@ const Navigation = () => {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
               </Nav.Link>
             </Nav.Item>
 
@@ -60,7 +73,7 @@ const Navigation = () => {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.about')}
               </Nav.Link>
             </Nav.Item>
 
@@ -73,7 +86,7 @@ const Navigation = () => {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t('navbar.projects')}
               </Nav.Link>
             </Nav.Item>
 
@@ -83,7 +96,7 @@ const Navigation = () => {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t('navbar.resume')}
               </Nav.Link>
             </Nav.Item>
 

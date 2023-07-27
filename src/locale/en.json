@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "resume": "Resume"
+    },
+    "home": {
+        "home_greeting": "Hi There!",
+        "im": "I'M"
+    },
+    "home2": {
+        "intro1": "LET ME",
+        "intro2": "INTRODUCE",
+        "intro3": "MYSELF",
+        "intro4":"I fell in love with programming and I have at least learnt something, I think...",
+        "intro5":"I am fluent in classics like",
+        "intro6":"Javascript",
+        "intro7":"My field of Interest's are building new",
+        "intro8":"Web Applications and Products",
+        "intro9":"Whenever possible, I also apply my passion for developing products with",
+        "intro10":"Node.js",
+        "intro11":"and",
+        "intro12":"Modern Javascript Library and Frameworks",
+        "intro13":"like ",
+        "intro14":"React.js",
+        "intro15":"FIND ME ON",
+        "intro16":"Feel free to",
+        "intro17":"connect",
+        "intro18":"with me"
+    },
+    "about":{
+        "about_greeting":"Know Who",
+        "about_greeting2":"I AM",
+        "skils":"Professional",
+        "skils2":"Skillset",
+        "tools":"Tools",
+        "tools2":"I use"
+    },
+    "about2":{
+        "about_greeting":"Hi Everyone, I am",
+        "from":"form",
+        "birthe_place":"Galicia, Spain.",
+        "about_my_self":"Something here about me",
+        "about_my_self2":"Additionally, I am currently employed as a web developer at Secuoya Content Group.",
+        "about_my_self3":"Apart from coding, some other activities that I love to do!",
+        "interests":"Playing Games",
+        "interests2":"Read books",
+        "interests3":"",
+        "note":"Strive to build things that make a difference!"
+    },
+    "github":{
+        "git":"Days I",
+        "git2":"Code"
+    },
+    "project":{
+        "intro":"My Recent",
+        "intro2":"Works",
+        "intro3":"Here are a few projects I've worked on recently.",
+        "project1":"Social Media Client meant for developers to share code snippets and collaborate on snippets with a text editor in real time, built with React.js, Node.js, socket.io and MongoDB. Created in partnership with my bootcamp colleague and friend, Santiago Moncada.",
+        "project2":"Social Media Server meant for developers to share code snippets and collaborate on snippets with a text editor in real time, built with React.js, Node.js, socket.io and MongoDB. Created in partnership with my bootcamp colleague and friend, Santiago Moncada.",
+        "project3":"Almacen BPO is a stock management application developed for Secuoya Content Group's BPO division. Built on Laravel and MySQL, this app provides efficient inventory control and optimization, enhancing productivity for the organization.",
+        "project4":"Guided tour visit application made with React.js and WordPress for the Mobility City Museum in Zaragoza, Spain.",
+        "project_warning":"Server under maintenance",
+        "project_warning2":"Please note that the project's repository is not publicly available due to its proprietary nature."
+    },
+    "resume":{
+        "download":"Download"
+    }
+}

@@ -1,36 +1,39 @@
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { useTranslation } from 'react-i18next';
 
 const AboutCard = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Jorge Hermo </span>
-            from <span className="purple"> Galicia, Spain.</span>
-            <br /> Algo sobre mi
+            {t('about2.about_greeting')} <span className="purple">Jorge Hermo </span>
+            {t('about2.from')} <span className="purple"> {t('about2.birthe_place')}</span>
+            <br /> {t('about2.about_my_self')}
             <br />
-            Additionally, I am currently employed as a web developer at
-            Secuoya Content Group.
+            {t('about2.about_my_self2')}
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            {t('about2.about_my_self3')}
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> {t('about2.interests')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Read books
+              <ImPointRight /> {t('about2.interests2')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> 
+              <ImPointRight /> {t('about2.interests3')}
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          {t('about2.note')}{" "}
           </p>
           <footer className="blockquote-footer">Jorge</footer>
         </blockquote>

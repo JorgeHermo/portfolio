@@ -3,8 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle/Particle";
 import Home2 from "./Home2"
 import Type from "./Type";
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+
+  const { t } = useTranslation();
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -13,11 +17,11 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+              {t('home.home_greeting')}{" "}
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                {t('home.im')}
                 <strong className="main-name"> JORGE HERMO TORRADO</strong>
               </h1>
 

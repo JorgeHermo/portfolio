@@ -4,17 +4,21 @@ import Particle from "../Particle/Particle";
 import MasterFP from "../../Assets/MasterFP.png";
 import Almacen from "../../Assets/AlmacenBPO.png";
 import Mobility from "../../Assets/MobilityCity.png";
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+
+    const { t } = useTranslation();
+
     return (
         <Container fluid className="project-section">
             <Particle />
             <Container>
                 <h1 className="project-heading">
-                    My Recent <strong className="purple">Works </strong>
+                {t('project.intro')} <strong className="purple">{t('project.intro2')} </strong>
                 </h1>
                 <p style={{ color: "white" }}>
-                    Here are a few projects I've worked on recently.
+                {t('project.intro3')}
                 </p>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="project-card">
@@ -24,9 +28,9 @@ function Projects() {
                             title="Hot To Code Client"
                             description={
                                 <span>
-                                    Social Media meant for developers to share code snippets and collaborate on snippets with a text editor in real time, built with React.js, Node.js, socket.io and MongoDB. Created in partnership with my bootcamp colleague and friend, Santiago Moncada.
+                                    {t('project.project1')}
                                     <br />
-                                    <span style={{ color: 'orange' }}>Server under maintenance</span>
+                                    <span style={{ color: 'orange' }}>{t('project.project_warning')}</span>
                                 </span>
                             }
 
@@ -41,9 +45,9 @@ function Projects() {
                             title="Hot To Code Server"
                             description={
                                 <span>
-                                    Social Media meant for developers to share code snippets and collaborate on snippets with a text editor in real time, built with React.js, Node.js, socket.io and MongoDB. Created in partnership with my bootcamp colleague and friend, Santiago Moncada.
+                                    {t('project.project2')}
                                     <br />
-                                    <span style={{ color: 'orange' }}>Server under maintenance</span>
+                                    <span style={{ color: 'orange' }}>{t('project.project_warning')}</span>
                                 </span>
                             }
 
@@ -58,9 +62,9 @@ function Projects() {
                             title="Almacen BPO"
                             description={
                                 <span>
-                                    Almacen BPO is a stock management application developed for Secuoya Content Group's BPO division. Built on Laravel and MySQL, this app provides efficient inventory control and optimization, enhancing productivity for the organization.
+                                    {t('project.project3')}
                                     <br />
-                                    <span style={{ color: 'orange' }}> Please note that the project's repository is not publicly available due to its proprietary nature.</span>
+                                    <span style={{ color: 'orange' }}> {t('project.project_warning2')}</span>
                                 </span>
                             }
                             ghLink=""
@@ -74,9 +78,9 @@ function Projects() {
                             title="Mobility City Visitantes "
                             description={
                                 <span>
-                                    Guided tour visit application made with React.js and WordPress for the Mobility City Museum in Zaragoza, Spain.
+                                    {t('project.project4')}
                                     <br />
-                                    <span style={{ color: 'orange' }}> Please note that the project's repository is not publicly available due to its proprietary nature.</span>
+                                    <span style={{ color: 'orange' }}> {t('project.project_warning2')}</span>
                                 </span>
                             }
                             ghLink=""
