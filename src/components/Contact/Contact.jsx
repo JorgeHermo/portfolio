@@ -43,8 +43,8 @@ function Contact() {
                 <Form.Control as="textarea" name="message" />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
-            {t('contact.submit')}
+            <Button variant="primary" className="modal-form-btn" type="submit">
+                {t('contact.submit')}
             </Button>
         </Form>
     );
