@@ -1,13 +1,19 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 // import myImg from "../../Assets/"; TODO Get a proper avatar ASAP
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import Contact from "../Contact/Contact";
 
 const Home2 = () => {
 
   const { t } = useTranslation();
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModal = () => setShowModal(!showModal);
 
   return (
     <Container fluid className="home-about-section" id="about">
@@ -15,10 +21,10 @@ const Home2 = () => {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-            {t('home2.intro1')} <span className="purple"> {t('home2.intro2')} </span> {t('home2.intro3')}
+              {t('home2.intro1')} <span className="purple"> {t('home2.intro2')} </span> {t('home2.intro3')}
             </h1>
             <p className="home-about-body">
-            {t('home2.intro4')}
+              {t('home2.intro4')}
               <br />
               <br />{t('home2.intro5')}
               <i>
@@ -55,7 +61,7 @@ const Home2 = () => {
           <Col md={12} className="home-about-social">
             <h1>{t('home2.intro15')}</h1>
             <p>
-            {t('home2.intro16')} <span className="purple">{t('home2.intro17')} </span>{t('home2.intro18')}
+              {t('home2.intro16')} <span className="purple">{t('home2.intro17')} </span>{t('home2.intro18')}
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -78,10 +84,29 @@ const Home2 = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
+              <li className="social-icons-contact">
+                <Button variant="link" className="icon-colour home-social-icons-contact contact-btn" onClick={handleModal}>
+                  <AiOutlineMail />
+                </Button>
+              </li>
             </ul>
           </Col>
         </Row>
       </Container>
+      <Modal show={showModal} onHide={handleModal}>
+        <Modal.Header closeButton>
+          {/* TODO -> Add to locale json */}
+          <Modal.Title>Contact Me</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Contact />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 }
