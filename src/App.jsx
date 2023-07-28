@@ -3,6 +3,7 @@ import "./style.css";
 import './App.css';
 import AppRoutes from './routes/AppRoutes'
 import Navigation from './components/Navigation/Navigation'
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -10,6 +11,7 @@ const App = () => {
     <div className="App">
       <Navigation />
       <AppRoutes />
+      <Footer />
     </div>
   );
 }
