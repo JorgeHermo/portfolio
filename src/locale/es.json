@@ -27,7 +27,9 @@
         "intro15": "ENCUÉNTRAME EN",
         "intro16": "No dudes en",
         "intro17": "conectar",
-        "intro18": "conmigo"
+        "intro18": "conmigo",
+        "modal_header":"Contáctame",
+        "modal_close": "Cerrar"
     },
     "about": {
         "about_greeting": "Conoce Quien",
@@ -66,5 +68,11 @@
     },
     "resume":{
         "download":"Descargar"
+    },
+    "contact":{
+        "name":"Tu Nombre",
+        "email":"Tu Email",
+        "content":"Mensaje",
+        "submit":"Enviar"
     }
 }

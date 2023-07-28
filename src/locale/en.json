@@ -27,7 +27,9 @@
         "intro15":"FIND ME ON",
         "intro16":"Feel free to",
         "intro17":"connect",
-        "intro18":"with me"
+        "intro18":"with me",
+        "modal_header":"Contact Me",
+        "modal_close": "Close"
     },
     "about":{
         "about_greeting":"Know Who",
@@ -66,5 +68,11 @@
     },
     "resume":{
         "download":"Download"
+    },
+    "contact":{
+        "name":"Your Name",
+        "email":"Your Email",
+        "content":"Message",
+        "submit":"Send"
     }
 }

@@ -1,8 +1,11 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+
+    const { t } = useTranslation();
 
     const form = useRef();
 
@@ -26,22 +29,22 @@ function Contact() {
     return (
         <Form ref={form} onSubmit={sendEmail}>
             <Form.Group>
-                <Form.Label>Your Name</Form.Label>
+                <Form.Label>{t('contact.name')}</Form.Label>
                 <Form.Control type="text" name="from_name" />
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Your Email</Form.Label>
+                <Form.Label>{t('contact.email')}</Form.Label>
                 <Form.Control type="email" name="from_email" />
             </Form.Group>
 
             <Form.Group>
-                <Form.Label>Message</Form.Label>
+                <Form.Label>{t('contact.content')}</Form.Label>
                 <Form.Control as="textarea" name="message" />
             </Form.Group>
 
             <Button variant="primary" type="submit">
-                Send
+            {t('contact.submit')}
             </Button>
         </Form>
     );

@@ -96,14 +96,14 @@ const Home2 = () => {
       <Modal show={showModal} onHide={handleModal}>
         <Modal.Header closeButton>
           {/* TODO -> Add to locale json */}
-          <Modal.Title>Contact Me</Modal.Title>
+          <Modal.Title>{t('home2.modal_header')}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Contact />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleModal}>
-            Close
+          {t('home2.modal_close')}
           </Button>
         </Modal.Footer>
       </Modal>
