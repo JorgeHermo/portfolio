@@ -3,7 +3,9 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle/Particle";
 import MasterFP from "../../Assets/MasterFP.png";
 import Almacen from "../../Assets/AlmacenBPO.png";
-import Mobility from "../../Assets/MobilityCity.png";
+import Mobility from "../../Assets/icono_mobility_color.svg";
+import LABOR from "../../Assets/logo-secuoya-group-nuevo.png";
+
 import { useTranslation } from 'react-i18next';
 
 function Projects() {
@@ -79,6 +81,22 @@ function Projects() {
                             description={
                                 <span>
                                     {t('project.project4')}
+                                    <br />
+                                    <span style={{ color: 'orange' }}> {t('project.project_warning2')}</span>
+                                </span>
+                            }
+                            ghLink=""
+                        />
+                    </Col>
+
+                    <Col md={4} className="project-card">
+                        <ProjectCard
+                            imgPath={LABOR}
+                            isBlog={false}
+                            title="Syncro Labor - LDAP - Cloud QUalica"
+                            description={
+                                <span>
+                                    {t('project.project5')}
                                     <br />
                                     <span style={{ color: 'orange' }}> {t('project.project_warning2')}</span>
                                 </span>

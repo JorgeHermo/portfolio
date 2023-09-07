@@ -63,6 +63,7 @@
         "project2":"Social Media Server meant for developers to share code snippets and collaborate on snippets with a text editor in real time, built with React.js, Node.js, socket.io and MongoDB. Created in partnership with my bootcamp colleague and friend, Santiago Moncada.",
         "project3":"Almacen BPO is a stock management application developed for Secuoya Content Group's BPO division. Built on Laravel and MySQL, this app provides efficient inventory control and optimization, enhancing productivity for the organization.",
         "project4":"Guided tour visit application made with React.js and WordPress for the Mobility City Museum in Zaragoza, Spain.",
+        "project5":"Data synchronization application for LDAP and Qualica Cloud with Labor through microservices.",
         "project_warning":"Server under maintenance",
         "project_warning2":"Please note that the project's repository is not publicly available due to its proprietary nature."
     },

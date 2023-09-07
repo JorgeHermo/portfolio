@@ -63,6 +63,7 @@
         "project2": "Servidor de redes sociales diseñado para que los desarrolladores compartan fragmentos de código y colaboren en fragmentos con un editor de texto en tiempo real, construido con React.js, Node.js, socket.io y MongoDB. Creado en colaboración con mi colega de bootcamp y amigo, Santiago Moncada.",
         "project3": "Almacen BPO es una aplicación de gestión de stock desarrollada para la división BPO de Secuoya Content Group. Construida en Laravel y MySQL, esta aplicación proporciona un control y optimización eficientes del inventario, mejorando la productividad de la organización.",
         "project4": "Aplicación de visita guiada hecha con React.js y WordPress para el Museo de la Ciudad de la Movilidad en Zaragoza, España.",
+        "project5": "Aplicación de sincronización de datos de LDAP y el Cloud de Qualica con Labor a través de microservicios.",
         "project_warning": "Servidor en mantenimiento",
         "project_warning2": "Por favor, tenga en cuenta que el repositorio del proyecto no está disponible públicamente debido a su naturaleza propietaria."
     },
