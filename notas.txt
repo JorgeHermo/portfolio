@@ -1,0 +1,7 @@
+TODO
+1 - crear vistas, servicios y contextos en front para usar el back para servir los datos de los projectos
+2 - crear vistas, servicios y contextos en front para el auth
+3 - cambiar el tipo de contacto a nodemailer
+    * instalar nodemailer en Server
+    * crear formulario para contacto
+4 - deployar el backend
