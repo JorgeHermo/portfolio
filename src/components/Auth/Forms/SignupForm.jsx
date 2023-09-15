@@ -6,7 +6,6 @@ import authService from './../../../services/auth.services';
 const SignupForm = () => {
 
     const [signupData, setSignupData] = useState({
-        username: '',
         email: '',
         password: ""
     })
@@ -31,7 +30,7 @@ const SignupForm = () => {
             })
     }
 
-    const { username, email, password } = signupData
+    const { email, password } = signupData
 
     return (
         <Form onSubmit={handleSubmit}>
@@ -40,11 +39,6 @@ const SignupForm = () => {
             <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" value={email} onChange={handleInputChange} name="email" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="username">
-                <Form.Label>Username</Form.Label>
-                <Form.Control type="text" value={username} onChange={handleInputChange} name="username" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="password">
